@@ -1,15 +1,15 @@
-import * as esbuild from 'esbuild';
+import * as esbuild from "esbuild";
 
 export const esbuildConfig = {
-  entryPoints: ['src/index.ts', 'src/metadata.ts'],
+  entryPoints: ["src/index.ts", "src/.metadata/metadata.ts"],
   bundle: true,
   minify: true,
   splitting: true,
-  platform: 'node',
+  platform: "node",
   sourcemap: true,
-  format: 'esm',
-  packages: 'external',
-  outdir: 'dist',
+  format: "esm",
+  packages: "external",
+  outdir: "dist",
 };
 
 async function build() {

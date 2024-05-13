@@ -1,5 +1,5 @@
 {
-  "name": "@lawallet/plugin-template",
+  "name": "@feririarte/plugin-template",
   "version": "0.0.1",
   "description": "",
   "private": false,
@@ -24,17 +24,17 @@
   "author": "LaWallet Labs",
   "license": "MIT",
   "peerDependencies": {
+    "@bitcoin-design/bitcoin-icons-react": "^0.1.10",
     "@lawallet/react": "*",
     "@lawallet/ui": "*",
     "@nostr-dev-kit/ndk": "^2.5.1",
+    "confetti-js": "^0.0.18",
     "next": "14.1.4",
     "nostr-tools": "npm:@lawallet/nostr-tools@^1.17.0",
+    "qrcode.react": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "styled-components": "^6.1.8",
-    "@bitcoin-design/bitcoin-icons-react": "^0.1.10",
-    "confetti-js": "^0.0.18",
-    "qrcode.react": "^3.1.0"
+    "styled-components": "^6.1.8"
   },
   "devDependencies": {
     "@types/node": "^20.11.30",
@@ -44,21 +44,21 @@
     "esbuild": "0.20.2",
     "esbuild-plugin-styled-components": "^3.0.1",
     "eslint": "^8.57.0",
-    "eslint-config-standard-with-typescript": "^43.0.1",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.34.1",
+    "glob": "^10.3.12",
     "typescript": "^5.4.3"
   },
   "exports": {
     ".": "./dist/index.js",
-    "./metadata": "./dist/metadata.js"
+    "./metadata": "./dist/.metadata/metadata.js"
   },
   "typesVersions": {
     "*": {
       "metadata": [
-        "./dist/metadata.d.ts"
+        "./dist/.metadata/metadata.d.ts"
       ]
     }
   }

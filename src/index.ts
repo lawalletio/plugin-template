@@ -1,4 +1,4 @@
-import { AppIndex } from "./app";
+import AppIndex from "./app/page";
 
 type AppProps = Record<string, () => React.JSX.Element>;
 
