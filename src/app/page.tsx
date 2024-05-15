@@ -5,7 +5,7 @@ import React from "react";
 
 const AppIndex = () => {
   const {
-    account: { identity, balance, transactions },
+    account: { identity, balance },
   } = useWalletContext();
 
   return (

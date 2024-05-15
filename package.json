@@ -1,5 +1,5 @@
 {
-  "name": "@feririarte/plugin-template",
+  "name": "@lawallet/plugin-template",
   "version": "0.0.1",
   "description": "",
   "private": false,
@@ -19,6 +19,7 @@
     "test": "echo \"Error: no test specified\" && exit 0",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
+    "build:routes": "node ./src/.scripts/buildRoutes.js",
     "build": "node esbuild.config.js && tsc"
   },
   "author": "LaWallet Labs",

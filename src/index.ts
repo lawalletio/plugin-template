@@ -1,6 +1,7 @@
 import AppIndex from "./app/page";
 
-type AppProps = Record<string, () => React.JSX.Element>;
+type FComponent = () => React.JSX.Element;
+type AppProps = Record<string, FComponent>;
 
 export const App: AppProps = {
   "/": AppIndex,
