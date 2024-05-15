@@ -14,11 +14,13 @@
   "files": [
     "dist"
   ],
+  "prettier": "@lawallet/prettier-config",
   "scripts": {
     "dev": "tsc && node watch.config.js",
     "test": "echo \"Error: no test specified\" && exit 0",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
+    "format": "prettier --write \"**/*.{ts,tsx,md,mdx}\"",
     "build:routes": "node ./src/.scripts/buildRoutes.js",
     "build": "node esbuild.config.js && tsc"
   },
@@ -50,7 +52,11 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.34.1",
     "glob": "^10.3.12",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.3",
+    "prettier": "^3.2.5",
+    "@lawallet/typescript-config": "*",
+    "@lawallet/eslint-config": "*",
+    "@lawallet/prettier-config": "*"
   },
   "exports": {
     ".": "./dist/index.js",

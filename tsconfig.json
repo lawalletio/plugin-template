@@ -1,4 +1,5 @@
 {
+  "extends": "@lawallet/typescript-config/base.json",
   "compilerOptions": {
     "target": "es2016",
     "esModuleInterop": true,
