@@ -22,7 +22,8 @@
     "lint:fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write \"**/*.{ts,tsx,md,mdx}\"",
     "build:routes": "node ./src/.scripts/buildRoutes.js",
-    "build": "node esbuild.config.js && tsc"
+    "build:plugin": "node esbuild.config.js && tsc",
+    "build": "pnpm build:routes && pnpm build:plugin"
   },
   "author": "LaWallet Labs",
   "license": "MIT",
