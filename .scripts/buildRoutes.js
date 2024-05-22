@@ -1,14 +1,14 @@
-import { globSync } from "glob";
-import Path from "path";
-import { fileURLToPath } from "url";
+import { globSync } from 'glob';
+import Path from 'path';
+import { fileURLToPath } from 'url';
 
 const __dirname = Path.dirname(fileURLToPath(import.meta.url));
-const appFolder = Path.join(__dirname, "../app");
+const appFolder = Path.join(__dirname, '../src/app');
 
 function getPathsByExtensions(path, extensions) {
   const extensionsSet = new Set(extensions.map((e) => `.${e.toLowerCase()}`));
 
-  return globSync("*", {
+  return globSync('*', {
     withFileTypes: true,
     cwd: path,
     matchBase: true,
@@ -20,8 +20,8 @@ function getPathsByExtensions(path, extensions) {
 }
 
 function relativeReplacingInDirs(path, reg, s) {
-  const parts = path.relative().split("/");
-  let relative = "";
+  const parts = path.relative().split('/');
+  let relative = '';
   for (const part of parts) {
     relative += `${part.replace(reg, s)}/`;
   }
@@ -41,11 +41,11 @@ function findDuplicates(values) {
 }
 
 function setUpRoutes() {
-  const paths = getPathsByExtensions(appFolder, ["tsx"]);
+  const paths = getPathsByExtensions(appFolder, ['tsx']);
   const duplicates = findDuplicates(paths);
 
   if (0 === paths.length) {
-    throw new Error("Not routes found");
+    throw new Error('Not routes found');
   }
 
   if (duplicates.length) {
@@ -54,7 +54,7 @@ function setUpRoutes() {
 
   for (const path of paths) {
     const modulePath = path.relative();
-    const routePath = relativeReplacingInDirs(path, /^_/, ":");
+    const routePath = relativeReplacingInDirs(path, /^_/, ':');
     const matches = routePath.match(/^(?<page>.*)(?<ext>\..*)$/i);
 
     console.log(modulePath);

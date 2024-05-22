@@ -21,11 +21,11 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write \"**/*.{ts,tsx,md,mdx}\"",
-    "build:routes": "node ./src/.scripts/buildRoutes.js",
+    "build:routes": "node ./.scripts/buildRoutes.js",
     "build:plugin": "node esbuild.config.js && tsc",
     "build": "pnpm build:routes && pnpm build:plugin"
   },
-  "author": "LaWallet Labs",
+  "author": "La Crypta Labs",
   "license": "MIT",
   "peerDependencies": {
     "@bitcoin-design/bitcoin-icons-react": "^0.1.10",
