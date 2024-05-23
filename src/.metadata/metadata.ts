@@ -1,6 +1,6 @@
 export const metadata = {
   image: '',
-  author: 'LaWallet Labs',
-  title: 'Boltz plugin',
-  description: 'Test boltz desc',
+  author: 'La Crypta Labs',
+  title: 'Template plugin',
+  description: 'Template base para iniciar un plugin.',
 };
