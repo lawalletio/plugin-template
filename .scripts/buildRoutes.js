@@ -52,14 +52,15 @@ function setUpRoutes() {
     throw new Error(`Duplicate routes: ${duplicates.toString()}`);
   }
 
+  // console.log(paths);
   for (const path of paths) {
     const modulePath = path.relative();
     const routePath = relativeReplacingInDirs(path, /^_/, ':');
     const matches = routePath.match(/^(?<page>.*)(?<ext>\..*)$/i);
 
     console.log(modulePath);
-    console.log(routePath);
-    console.log(matches);
+    // console.log(routePath);
+    // console.log(matches);
   }
 }
 
