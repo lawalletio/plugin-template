@@ -1,6 +1,0 @@
-export const metadata = {
-  image: '',
-  author: 'La Crypta Labs',
-  title: 'Template plugin',
-  description: 'Template base para iniciar un plugin.',
-};
