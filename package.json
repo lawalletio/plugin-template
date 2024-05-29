@@ -14,7 +14,7 @@
   "files": [
     "dist"
   ],
-  "prettier": "@lawallet/prettier-config",
+  "prettier": "@lacrypta/prettier-config",
   "scripts": {
     "dev": "tsc && node watch.config.js",
     "test": "echo \"Error: no test specified\" && exit 0",
@@ -41,9 +41,9 @@
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
-    "@lawallet/eslint-config": "*",
-    "@lawallet/prettier-config": "*",
-    "@lawallet/typescript-config": "*",
+    "@lacrypta/eslint-config": "*",
+    "@lacrypta/prettier-config": "*",
+    "@lacrypta/typescript-config": "*",
     "@types/node": "^20.11.30",
     "@types/react": "^18",
     "@types/react-dom": "^18.2.22",
