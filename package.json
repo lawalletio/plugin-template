@@ -8,9 +8,9 @@
     "url": "https://github.com/lawalletio/plugin-template.git",
     "directory": "plugins/plugin-template"
   },
-  "main": "dist/index.js",
+  "main": "dist/exports.js",
   "type": "module",
-  "types": "dist/index.d.ts",
+  "types": "dist/exports.d.ts",
   "files": [
     "dist"
   ],
@@ -41,6 +41,9 @@
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
+    "@lawallet/eslint-config": "*",
+    "@lawallet/prettier-config": "*",
+    "@lawallet/typescript-config": "*",
     "@types/node": "^20.11.30",
     "@types/react": "^18",
     "@types/react-dom": "^18.2.22",
@@ -53,14 +56,12 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.34.1",
     "glob": "^10.3.12",
-    "typescript": "^5.4.3",
     "prettier": "^3.2.5",
-    "@lawallet/typescript-config": "*",
-    "@lawallet/eslint-config": "*",
-    "@lawallet/prettier-config": "*"
+    "typescript": "^5.4.3",
+    "uglify-js": "^3.17.4"
   },
   "exports": {
-    ".": "./dist/index.js",
+    ".": "./dist/exports.js",
     "./metadata": "./dist/.metadata/metadata.js"
   },
   "typesVersions": {

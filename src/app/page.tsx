@@ -18,7 +18,7 @@ const AppIndex = () => {
       <Flex>
         <Button
           onClick={() => {
-            alert('Probando 123456');
+            alert('Test');
           }}
         >
           Click me
