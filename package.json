@@ -62,13 +62,6 @@
   },
   "exports": {
     ".": "./dist/exports.js",
-    "./metadata": "./dist/.metadata/metadata.js"
-  },
-  "typesVersions": {
-    "*": {
-      "metadata": [
-        "./dist/.metadata/metadata.d.ts"
-      ]
-    }
+    "./metadata": "./dist/metadata.js"
   }
 }

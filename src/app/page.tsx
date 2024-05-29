@@ -11,7 +11,7 @@ const AppIndex = () => {
   return (
     <Container size="small">
       <Flex flex={1} direction="column" align="center" justify="center">
-        <Text>Hola, {identity.data.username ?? identity.data.hexpub}</Text>
+        <Text>Hola, {identity.username ?? identity.hexpub}</Text>
         <Text>Tu balance es de {formatToPreference('SAT', balance.amount, 'es')} satoshis</Text>
       </Flex>
 

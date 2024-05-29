@@ -481,7 +481,7 @@ async function main() {
       const normalizedPath = normalizeAppPath(withoutAppDir);
 
       checkComponentExport(`../${page}.tsx`);
-      importStatements += `import p${index} from './app${withoutAppDir}';\n`;
+      importStatements += `import p${index} from '../app${withoutAppDir}';\n`;
 
       if (withoutAppDir.endsWith('/layout')) {
         layouts.push({ path: normalizedPath, component: `p${index}` });
@@ -513,7 +513,7 @@ async function main() {
     routeMappings += 'export const PluginRoutes = Object.keys(App);\n';
 
     const finalOutput = UglifyJS.minify(`${importStatements}\n${routeMappings}`);
-    fs.writeFile('./src/exports.js', finalOutput.code);
+    fs.writeFile('./src/manifest/exports.js', finalOutput.code);
   });
 }
 
