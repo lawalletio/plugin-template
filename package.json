@@ -21,7 +21,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write \"**/*.{ts,tsx,md,mdx}\"",
-    "build:routes": "node ./.scripts/buildRoutes.js",
+    "build:routes": "lawallet-plugins build-routes",
     "build:plugin": "node esbuild.config.js && tsc",
     "build": "pnpm build:routes && pnpm build:plugin"
   },
@@ -39,6 +39,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^6.1.8"
+  },
+  "dependencies": {
+    "@lawallet/plugins-cli": "*"
   },
   "devDependencies": {
     "@lacrypta/eslint-config": "*",
