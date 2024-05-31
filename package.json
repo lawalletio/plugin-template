@@ -41,7 +41,7 @@
     "styled-components": "^6.1.8"
   },
   "dependencies": {
-    "@lawallet/plugins-cli": "*"
+    "@lawallet/plugins-cli": "latest"
   },
   "devDependencies": {
     "@lacrypta/eslint-config": "*",
@@ -50,18 +50,10 @@
     "@types/node": "^20.11.30",
     "@types/react": "^18",
     "@types/react-dom": "^18.2.22",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
     "esbuild": "0.20.2",
-    "esbuild-plugin-styled-components": "^3.0.1",
     "eslint": "^8.57.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-n": "^16.6.2",
-    "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-react": "^7.34.1",
-    "glob": "^10.3.12",
     "prettier": "^3.2.5",
-    "typescript": "^5.4.3",
-    "uglify-js": "^3.17.4"
+    "typescript": "^5.4.3"
   },
   "exports": {
     ".": "./dist/exports.js",
