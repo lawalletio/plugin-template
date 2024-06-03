@@ -58,5 +58,12 @@
   "exports": {
     ".": "./dist/exports.js",
     "./metadata": "./dist/manifest/metadata.js"
+  },
+  "typesVersions": {
+    "*": {
+      "metadata": [
+        "./dist/manifest/metadata.d.ts"
+      ]
+    }
   }
 }

@@ -1,7 +1,7 @@
 import * as esbuild from 'esbuild';
 
 export const esbuildConfig = {
-  entryPoints: ['src/exports.js', 'src/manifest/metadata.json'],
+  entryPoints: ['src/exports.js', 'src/manifest/metadata.ts'],
   bundle: true,
   minify: true,
   splitting: true,
@@ -10,7 +10,6 @@ export const esbuildConfig = {
   format: 'esm',
   packages: 'external',
   outdir: 'dist',
-  loader: { '.json': 'json' },
 };
 
 async function build() {
