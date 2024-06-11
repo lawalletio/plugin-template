@@ -1,4 +1,5 @@
 'use client';
+import React from 'react'
 import { formatToPreference, useBalance } from '@lawallet/react';
 import { Button, Container, Flex, Text } from '@lawallet/ui';
 
