@@ -29,8 +29,6 @@
   "license": "MIT",
   "peerDependencies": {
     "@bitcoin-design/bitcoin-icons-react": "^0.1.10",
-    "@lawallet/react": "*",
-    "@lawallet/ui": "*",
     "@nostr-dev-kit/ndk": "^2.5.1",
     "confetti-js": "^0.0.18",
     "next": "14.1.4",
@@ -41,6 +39,8 @@
     "styled-components": "^6.1.8"
   },
   "dependencies": {
+    "@lawallet/react": "latest",
+    "@lawallet/ui": "latest",
     "@lawallet/plugins-cli": "latest"
   },
   "devDependencies": {

@@ -7,11 +7,11 @@
     "strict": true,
     "skipLibCheck": true,
     "jsx": "preserve",
-    "module": "ESNext",
+    "module": "NodeNext",
     "declaration": true,
     "sourceMap": true,
     "outDir": "dist",
-    "moduleResolution": "node",
+    "moduleResolution": "NodeNext",
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true
   },
