@@ -1,12 +1,9 @@
 'use client';
+import { formatToPreference, useBalance } from '@lawallet/react';
 import { Button, Container, Flex, Text } from '@lawallet/ui';
-import { formatToPreference, useWalletContext } from '@lawallet/react';
-import React from 'react';
 
 const AppIndex = () => {
-  const {
-    account: { balance },
-  } = useWalletContext();
+  const balance = useBalance();
 
   return (
     <Container size="small">
