@@ -13,7 +13,9 @@
     "outDir": "dist",
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true,
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+    "types": ["@types/react"]
   },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.jsx"],
   "exclude": ["dist", "node_modules"]
 }

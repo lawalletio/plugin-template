@@ -8,6 +8,7 @@ export const esbuildConfig = {
   platform: 'node',
   sourcemap: true,
   format: 'esm',
+  jsx: "automatic",
   packages: 'external',
   outdir: 'dist',
 };
